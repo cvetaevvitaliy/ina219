@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"ina219\stm32f1xx_it.o"
+"ina219\stm32f1xx_hal_msp.o"
+"ina219\main.o"
+"ina219\ssd1306.o"
+"ina219\fonts.o"
+"ina219\fonts3.o"
+"ina219\ssd1306_2.o"
+"ina219\system_stm32f1xx.o"
+"ina219\startup_stm32f103xb.o"
+"ina219\stm32f1xx_hal_tim_ex.o"
+"ina219\stm32f1xx_hal.o"
+"ina219\stm32f1xx_hal_gpio.o"
+"ina219\stm32f1xx_hal_rcc_ex.o"
+"ina219\stm32f1xx_hal_flash_ex.o"
+"ina219\stm32f1xx_hal_dma.o"
+"ina219\stm32f1xx_hal_i2c.o"
+"ina219\stm32f1xx_hal_gpio_ex.o"
+"ina219\stm32f1xx_hal_tim.o"
+"ina219\stm32f1xx_hal_pwr.o"
+"ina219\stm32f1xx_hal_rcc.o"
+"ina219\stm32f1xx_hal_cortex.o"
+"ina219\stm32f1xx_hal_flash.o"
+--library_type=microlib --strict --scatter "ina219\ina219.sct"
+--diag_suppress=L6329 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ina219.map" -o ina219\ina219.axf
